@@ -58,7 +58,7 @@ header{
 }
 .experienceHtml{
     background-color: #1f2937;
-    box-shadow:  -2px 18px 20px 8px #f9faf8;
+    box-shadow:  -2px 18px 20px 8px rgb(249, 250, 248,0.5);
     }
 .timeline:before {
     content: '';
@@ -76,8 +76,24 @@ header{
     width:1000px;
     padding:50px 0;
   }
-  
-  
+  .colorAclaration{
+    position: fixed;
+    right: -20px;
+    top: 220px;
+    z-index: 1;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #1f2937;
+    border-radius: 0.5rem;
+    padding: 10px 60px 10px 30px;
+    box-shadow: 0px 0px 10px 5px #333;
+  }
+  #orange{
+color: #ffd700
+  }
+  #blue{
+    color: rgba(59,112,239,1)
+  }
   .timeline ul{
     margin:0;
     padding:0 ;
@@ -92,8 +108,13 @@ header{
     padding:10px 70px 80px 70px;
   }
   
-  .timeline ul li .right_content h2{
+  .timeline ul li .blueContent h2{
     color:rgba(59,112,239,1);
+    padding:0px 2px 18px 0px;
+  }
+
+  .timeline ul li .orangeContent h2{
+    color:#ffd700;
     padding:0px 2px 18px 0px;
   }
 
@@ -158,11 +179,18 @@ header{
     
   }
   
-  .timeline ul li:nth-child(even) .left_content#comingSoon{
-  left: -87px;
-  background-color: #1f2937;
-  z-index: 1;
-  box-shadow: 0px 0px 20px 5px rgb(38, 92, 219);
+  #comingSoon{
+    background-color: #1f2937;
+    z-index: 1;
+    box-shadow: 0px 0px 20px 5px rgb(38 92 219);
+    position: absolute;
+    top: 12px;
+    right: -87px;
+    margin: 0;
+    padding: 8px 16px;
+    color: #fff;
+    box-shadow: 0 0 10px 5px rgb(59 112 239 / 70%);
+    border-radius: 18px;
 }
 
   .timeline ul li:nth-child(even) .left_content{
@@ -229,43 +257,41 @@ header{
 /***************************************************************************/
 /************************************************************** Who am I */
 /***************************************************************************/
-/* 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 100vh;
-  overflow: hidden;
-}
-
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 50px;
-  background-color: #ddd;
-  border-bottom: 1px solid #bbb;
-  font-size: 24px;
-  font-weight: 700;
-  z-index: 100;
-} */
 .mainWhoAmI{
     background-color: #1f2937;
+    padding: 120px 15%;
+}
+.whoAmI{
+  display: flex;
+align-items: center;
+padding: 20px ;
+justify-content: space-around;
+}
+.pictureOfMe{
+  width: 40%;
+  padding: 20%;
+  background-image: url("../img/IMG_6930.JPG");
+  background-position: center;
+background-size: cover;
+  border-radius: 50%;
+}
+.infoAboutMe{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#titleWhoAmI{
+  color: #f9faf8;
+  font-size: 2rem;
+  font-weight: 300;
+}
+#subTitleWhoAmI{
+  color: #e5e7eb;
+  font-size: 1.2rem;
+
+  font-weight: 500;
 }
 .logo {
   color: rgb(161, 60, 255);
