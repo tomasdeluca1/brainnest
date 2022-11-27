@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/***************************************************************************/
+/************************************************************** Header nav */
+/***************************************************************************/
+header{
+    background-color: #1f2937;
+    padding: 20px 12.5% ;
+}
+.navFlex{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.navFlex a{
+    text-decoration: none;
+}
+.navLinksFlex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navLinksFlex a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5e7eb;
+    margin: 0 20px;
+}
+.headerLogo{
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: 600;
+}
+
+/***************************************************************************/
+/***************************************************** Header introduction */
+/***************************************************************************/
+#mainText{
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #f9faf8;
+
+}
+#mainSubtext{
+    color: #e5e7eb;
+    font-size: 16px;
+    margin: 0 0 15px 0;
+}
+#mainSignUp{
+    padding: 10px 35px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border:  0px solid red;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+.websiteIntro{
+    display: flex;
+    padding: 80px 0px;
+}
+#websiteIntroLeft{
+    width: 48%;
+    padding: 0 2% 0 0 ;
+}
+#websiteIntroRight{
+    width: 50%;
+}
+#websiteIntroImg{
+    background-image: url("../img/myOffice.JPG");
+    width: 100%; 
+    height: 100%; 
+    border-radius: 0.5rem;
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+/***************************************************************************/
+/****************************************************** Huevsite Creations */
+/***************************************************************************/
+
+.creationSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px 80px 20px;
+    width: 100%;
+}
+.creationSection h2{
+text-align: center;
+margin-bottom: 30px;
+font-size: 36px;
+color: #1f2937;
+}
+.creationsFlex{
+display: flex;
+width: 100%;
+padding: 0 12.5%;
+}
+.imageFigureBox{
+    width: 20%;
+    margin: 0 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.creationImg{
+    width: 150px;
+    height: 150px;
+    border: #3882f6 3px solid;
+    border-radius: 1rem;
+    background-size: cover;
+background-position: center;
+margin-bottom: 10px;
+}
+#argentinaCampersImg{
+background-image: url("../img/Banner-01.png");
+}
+#sosTuMagiaImg{
+    background-image: url("../img/agusFoto.jpg");
+}
+#gitSearcherImg{
+    background-image: url("../img/github.png");
+}
+#huevsiteImg{
+    background-image: url("../img/Banner-04.png");
+}
+
+.imageFigureBox {
+    text-align: center;
+    font-size: 14px;
+}
+
+/***************************************************************************/
+/*********************************************************** Quote section */
+/***************************************************************************/
+
+.quoteSection{
+    padding: 100px 20%;
+    width: 100%;
+    background-color: #e5e7eb;
+}
+.quoteSection blockquote{
+    font-weight: 300;
+    font-style:italic;
+    font-size: 36px;
+    color: #1f2937;
+}
+.quoteAuthor{
+    text-align: right;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#wayneQuote{
+    margin-top: 10px;
+    font-size: 18px;
+}
+#michaelQuote{
+    margin-top: 5px;
+    font-size: 14px;
+}
+/***************************************************************************/
+/************************************************** Call to action section */
+/***************************************************************************/
+
+.callToActionSection{
+margin: 70px 15%;
+padding: 40px 5%;
+background-color: #3882f6;
+border-radius: 0.5rem;
+display: flex;
+align-items: center;
+justify-content: space-around;
+color: #f9faf8;
+}
+
+#catButton{
+    padding: 5px 20px;
+    border: #f9faf8 1px solid;
+    border-radius: 0.3rem;
+    color: #f9faf8;
+    background-color: #3882f6;
+}
+
+/***************************************************************************/
+/****************************************************************** Footer */
+/***************************************************************************/
+
+footer{
+    background-color: #1f2937;
+    padding: 20px;
+    text-align: center;
+    color: #e5e7eb;
+}
