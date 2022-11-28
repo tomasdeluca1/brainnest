@@ -64,10 +64,18 @@ header{
     border:  0px solid red;
     border-radius: 0.5rem;
     font-weight: 500;
+    cursor: pointer;
+}
+#mainSignUp:hover{
+    background-color: #f9faf8;
+    color: #3882f6;
+    padding: 8px 33px;
+    border:  2px solid #3882f6;
 }
 .websiteIntro{
     display: flex;
     padding: 80px 0px;
+    justify-content: space-between;
 }
 #websiteIntroLeft{
     width: 48%;
@@ -120,7 +128,8 @@ padding: 0 12.5%;
 .creationImg{
     width: 150px;
     height: 150px;
-    border: #3882f6 3px solid;
+    box-shadow: 0px 0px 20px 3px rgb(51, 130, 246,0.3);
+    border: #3882f6 1px solid;
     border-radius: 1rem;
     background-size: cover;
 background-position: center;
@@ -192,8 +201,12 @@ color: #f9faf8;
     border-radius: 0.3rem;
     color: #f9faf8;
     background-color: #3882f6;
+    cursor: pointer;
 }
-
+#catButton:hover{
+    background-color: #f9faf8;
+    color: #3882f6;
+}
 /***************************************************************************/
 /****************************************************************** Footer */
 /***************************************************************************/

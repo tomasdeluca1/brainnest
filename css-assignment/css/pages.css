@@ -46,6 +46,9 @@ border-top-right-radius: 1rem;
     text-align: center;
     }
 
+    .currentPage{
+      font-weight: 600;
+    }
 /***************************************************************************/
 /************************************************************** Experience */
 /***************************************************************************/
@@ -260,7 +263,7 @@ color: #ffd700
 
 .mainWhoAmI{
     background-color: #1f2937;
-    padding: 120px 15%;
+    padding: 160px 15%;
 }
 .whoAmI{
   display: flex;
