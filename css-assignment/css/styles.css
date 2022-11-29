@@ -3,59 +3,144 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+i{
+    font-style: normal;
+}
 body{
     width: 100%;
   
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/***************************************************************************/
+
+    /***************************************************************************/
 /************************************************************** Header nav */
 /***************************************************************************/
+@media (min-width: 0) {
 header{
     background-color: #1f2937;
-    padding: 20px 12.5% ;
+    padding: 30px 10% ;
 }
-.navFlex{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
+
+.navFlexMobile{
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
-.navFlex a{
+.navFlexMobile a{
     text-decoration: none;
 }
-.navLinksFlex{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.navLinksFlex a{
-    text-decoration: none;
-    font-size: 18px;
-    color: #e5e7eb;
-    margin: 0 20px;
-}
-.headerLogo{
+.headerLogoMobile{
     font-size: 24px;
     color: #f9faf8;
     font-weight: 600;
 }
+.navBarMobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+padding: 15px;
 
+background-color: #404c5b;
+border: #1f2937 0px solid;
+border-radius: 0.5rem;
+}
+.navBarMobile:hover{
+    background-color: #253141;
+}
+.navCross{
+    display: none;
+    width: 100%;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.navBars{
+    width: 100%;
+    
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+.navLinksFlexMobile{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 0;
+    left: -80%;
+transition: all 0.3s;
+position: fixed;
+height: 100vh;
+z-index: 1;
+box-shadow: 0px 0px 20px 5px rgb(31, 41, 55);
+background-color: #253141;
+text-align: center;
+}
+.navLinksFlexMobile a{
+    text-decoration: none;
+    width: 100%;
+    font-size: 18px;
+    color: #e5e7eb;
+    z-index: 1;
+    font-weight: 500;
+}
+.navFlex{
+    display: none;
+}
+}
+@media (min-width:767px) {
+    .navFlexMobile{
+        display: none;
+    }
+    .navFlex{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navFlex a{
+        text-decoration: none;
+    }
+    .navLinksFlex{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .navLinksFlex a{
+        text-decoration: none;
+        font-size: 18px;
+        color: #e5e7eb;
+        margin: 0 20px;
+    }
+    .headerLogo{
+        font-size: 24px;
+        color: #f9faf8;
+        font-weight: 600;
+    }
+}
+@media (min-width:1024px) {
+header{
+    padding: 20px 12.5% ;
+}
+}
 /***************************************************************************/
 /***************************************************** Header introduction */
 /***************************************************************************/
 #mainText{
-    font-size: 48px;
+    font-size: 28px;
     font-weight: extra-bold;
     color: #f9faf8;
-
+    margin-bottom: 5px;
 }
 #mainSubtext{
     color: #e5e7eb;
-    font-size: 16px;
-    margin: 0 0 15px 0;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 15px;
 }
 #mainSignUp{
     padding: 10px 35px;
@@ -74,24 +159,61 @@ header{
 }
 .websiteIntro{
     display: flex;
-    padding: 80px 0px;
+    flex-direction:column-reverse;
+    padding: 80px 12;
     justify-content: space-between;
+    background-color: #1f2937;
 }
 #websiteIntroLeft{
-    width: 48%;
-    padding: 0 2% 0 0 ;
+    width: 100%;
+    padding: 20px 5% 40px 5% ;
 }
 #websiteIntroRight{
-    width: 50%;
+    width: 100%;
+    height: 30vh;
 }
 #websiteIntroImg{
     background-image: url("../img/myOffice.JPG");
     width: 100%; 
     height: 100%; 
-    border-radius: 0.5rem;
     background-size: cover;
-    background-position: bottom;
+   background-position-x: center;
+   background-position-y: bottom;
 
+}
+@media (min-width: 767px) {
+    #mainText{
+        font-size: 36px;
+    }
+    #mainSubtext{
+        color: #e5e7eb;
+        font-size: 16px;
+    }
+    #websiteIntroRight{
+        height: 45vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    #mainText{
+        font-size: 48px;
+    }
+    .websiteIntro{
+    flex-direction: row;
+    padding: 80px 12.5% ;
+    height: 50vh;
+    }
+    #websiteIntroLeft{
+        width: 48%;
+        padding: 0 2% 0 0 ;
+    }
+    #websiteIntroRight{
+        width: 50%;
+        height: auto;
+    }
+    #websiteIntroImg{
+    border-radius: 0.5rem;
+    }
 }
 
 /***************************************************************************/
@@ -103,33 +225,33 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px 20px 80px 20px;
+    padding: 50px 10px 80px 10px;
     width: 100%;
 }
 .creationSection h2{
 text-align: center;
 margin-bottom: 30px;
-font-size: 36px;
+font-size: 24px;
 color: #1f2937;
 }
 .creationsFlex{
 display: flex;
+flex-wrap: wrap;
 width: 100%;
-padding: 0 12.5%;
+padding: 0 
 }
 .imageFigureBox{
-    width: 20%;
-    margin: 0 2.5%;
+    width: 100%;
+    margin: 5px 2.5%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-
 }
 .creationImg{
-    width: 150px;
-    height: 150px;
-    box-shadow: 0px 0px 20px 3px rgb(51, 130, 246,0.3);
-    border: #3882f6 1px solid;
+    width: 120px;
+    height: 120px;
+    box-shadow: 0px 0px 10px 3px rgb(51, 130, 246,0.3);
+    border: rgb(56, 130, 246,0.5) 1px solid;
     border-radius: 1rem;
     background-size: cover;
 background-position: center;
@@ -148,9 +270,38 @@ background-image: url("../img/Banner-01.png");
     background-image: url("../img/Banner-04.png");
 }
 
-.imageFigureBox {
-    text-align: center;
+.imageFigureBox figcaption{
+    padding: 0 0 0 15px;
+    text-align: left;
     font-size: 14px;
+    font-style: italic;
+}
+
+@media (min-width:767px) {
+    
+    .creationSection{
+        padding: 50px 20px 80px 20px;
+    }
+    .creationSection h2{
+    font-size: 36px;
+    }
+    .creationsFlex{
+    padding: 0 12.5%;
+    }
+    .imageFigureBox{
+        width: 20%;
+        flex-direction: column;
+    }
+    .creationImg{
+        width: 120px;
+        height: 120px;
+    }    
+}
+@media (min-width:1024px) {
+    .creationImg{
+        width: 150px;
+        height: 150px;
+    }
 }
 
 /***************************************************************************/
@@ -158,54 +309,116 @@ background-image: url("../img/Banner-01.png");
 /***************************************************************************/
 
 .quoteSection{
-    padding: 100px 20%;
+    padding: 30px 10%;
     width: 100%;
     background-color: #e5e7eb;
 }
 .quoteSection blockquote{
     font-weight: 300;
     font-style:italic;
-    font-size: 36px;
+    font-size: 22px;
     color: #1f2937;
 }
 .quoteAuthor{
     text-align: right;
     width: 100%;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
 }
 
 #michaelQuote{
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 14px;
 }
 
+@media (min-width: 767px) {
+    .quoteSection{
+        padding: 100px 20%;
+        width: 100%;
+        background-color: #e5e7eb;
+    }
+    .quoteSection blockquote{
+        font-weight: 300;
+        font-style:italic;
+        font-size: 36px;
+        color: #1f2937;
+    }
+    .quoteAuthor{
+        text-align: right;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    #michaelQuote{
+        margin-top: 10px;
+        font-size: 18px;
+    }
+}
 /***************************************************************************/
 /************************************************** Call to action section */
 /***************************************************************************/
 
 .callToActionSection{
-margin: 70px 15%;
-padding: 40px 5%;
+    width: 80%;
+margin: 50px 10%;
+padding: 20px 5%;
 background-color: #3882f6;
 border-radius: 0.5rem;
 display: flex;
-align-items: center;
+flex-direction: column;
+align-items:center;
 justify-content: space-around;
 color: #f9faf8;
+position: relative;
 }
-
+.catText{
+width: 95%;
+margin-bottom: 20px;
+}
 #catButton{
-    padding: 5px 20px;
+    width: 100%;
+    padding: 7px 30px;
     border: #f9faf8 1px solid;
     border-radius: 0.3rem;
     color: #f9faf8;
     background-color: #3882f6;
     cursor: pointer;
+   
 }
 #catButton:hover{
     background-color: #f9faf8;
     color: #3882f6;
+}
+@media (min-width: 1024px) {
+    .callToActionSection{
+        width: 70%;
+        margin: 70px 15%;
+        padding: 40px 5%;
+        background-color: #3882f6;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        color: #f9faf8;
+        }
+        .catText{
+            width: auto;
+            margin-bottom: 20px;
+            }
+        #catButton{
+            padding: 5px 20px;
+            border: #f9faf8 1px solid;
+            border-radius: 0.3rem;
+            color: #f9faf8;
+            background-color: #3882f6;
+            cursor: pointer;
+        }
+        #catButton:hover{
+            background-color: #f9faf8;
+            color: #3882f6;
+        }
 }
 /***************************************************************************/
 /****************************************************************** Footer */
@@ -217,3 +430,5 @@ footer{
     text-align: center;
     color: #e5e7eb;
 }
+
+

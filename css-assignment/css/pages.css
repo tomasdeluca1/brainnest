@@ -21,7 +21,7 @@ padding: 10px 15% 40px 15%;
 .projectBox{
     display: flex;
     flex-direction: column;
-    margin: 20px 0;
+    margin: 20px;
     width: 350px;
     border-radius: 1rem;
     box-shadow: 0px 0px 10px 5px rgb(31, 41, 55, 0.2);
@@ -52,13 +52,10 @@ border-top-right-radius: 1rem;
 /***************************************************************************/
 /************************************************************** Experience */
 /***************************************************************************/
-header{
+/* header{
     padding: 0;
-}
-.navFlex{
-    padding: 20px 12.5% ;
-    z-index: 1;  
-}
+} */
+
 .experienceHtml{
     background-color: #1f2937;
     box-shadow:  -2px 18px 20px 8px rgb(249, 250, 248,0.5);
@@ -71,28 +68,27 @@ header{
     width:2px;
     top:0px;
     background:#fff;
-    z-index:1;
   }
   .timeline{
     position:relative;
     margin: 0 auto 0px auto;
     width:1000px;
-    padding:50px 0;
+    padding:100px 0;
   }
   .colorAclaration{
-    position: fixed;
-    right: -20px;
-    top: 220px;
-    z-index: 1;
-    font-size: 1rem;
+    position: absolute;
+    top: 130px;
+    right: 0;
+    font-size: 0.8rem;
     font-weight: 500;
-    background-color: #1f2937;
     border-radius: 0.5rem;
-    padding: 10px 60px 10px 30px;
-    box-shadow: 0px 0px 10px 5px #333;
+    display: flex;
+    width: 250px;
+    justify-content: space-around;
   }
   #orange{
-color: #ffd700
+
+    color:rgb(255, 131, 60);
   }
   #blue{
     color: rgba(59,112,239,1)
@@ -108,7 +104,7 @@ color: #ffd700
     line-height:normal;
     position:relative;
     width:50%;
-    padding:10px 70px 80px 70px;
+    padding:25px 70px 80px 70px;
   }
   
   .timeline ul li .blueContent h2{
@@ -117,7 +113,7 @@ color: #ffd700
   }
 
   .timeline ul li .orangeContent h2{
-    color:#ffd700;
+    color:rgb(255, 131, 60);
     padding:0px 2px 18px 0px;
   }
 
@@ -141,6 +137,7 @@ color: #ffd700
   
   .left_content{
     padding-bottom:20px;
+    font-size: 0.8rem;
   }
   
   .timeline ul li:nth-child(odd):before{
@@ -153,7 +150,6 @@ color: #ffd700
     box-shadow: 0 0 0 3px rgba(58,112,239,0.2);
     right:-8px;
     top:24px;
-    z-index:1;
   }
   
   .timeline ul li:nth-child(even):before{
@@ -166,7 +162,6 @@ color: #ffd700
     box-shadow: 0 0 0 3px rgba(58,112,239,0.2);
     left:-7px;
     top:24px;
-    z-index: 1;
   }
   
   .timeline ul li:nth-child(odd) .left_content{
@@ -182,19 +177,28 @@ color: #ffd700
     
   }
   
-  #comingSoon{
-    background-color: #1f2937;
-    z-index: 1;
-    box-shadow: 0px 0px 20px 5px rgb(38 92 219);
-    position: absolute;
-    top: 12px;
-    right: -87px;
-    margin: 0;
-    padding: 8px 16px;
-    color: #fff;
-    box-shadow: 0 0 10px 5px rgb(59 112 239 / 70%);
-    border-radius: 18px;
-}
+  @media (min-width: 767px) {
+    #comingSoon{
+      top: 12px;
+      right: -87px; 
+      background-color: #1f2937;
+      z-index: 1;
+      box-shadow: 0px 0px 20px 5px rgb(38 92 219);
+      position: absolute;
+      margin: 0;
+      padding: 8px 16px;
+      color: #fff;
+      box-shadow: 0 0 10px 5px rgb(59 112 239 / 70%);
+      border-radius: 18px;
+  }
+  .colorAclaration{
+    top: 120px;
+    font-size: 1rem;
+  }
+  .left_content{
+    font-size: 1rem;
+  }
+  }
 
   .timeline ul li:nth-child(even) .left_content{
     position:absolute;
@@ -217,9 +221,21 @@ color: #ffd700
     .timeline{
       width:100%;
     }
+
   }
   
-  @media (max-width: 767px){
+  @media (max-width: 767px ){
+    #comingSoon{
+      background-color: #1f2937;
+      z-index: 1;
+      position: absolute;
+      top: -30px;
+      margin: 0;
+      padding: 8px 16px;
+      color: #fff;
+      box-shadow: 0 0 10px 5px rgb(59 112 239 / 70%);
+      border-radius: 18px;    
+  }
     .timeline{
       width:100%;
     }
@@ -263,10 +279,56 @@ color: #ffd700
 
 .mainWhoAmI{
     background-color: #1f2937;
-    padding: 160px 15%;
+    padding: 70px 5% 350px 5%;
 }
 .whoAmI{
   display: flex;
+  flex-direction: column;
+align-items: center;
+padding: 20px ;
+justify-content: space-around;
+}
+.pictureOfMe{
+  width: 80%;
+  padding: 40%;
+  background-image: url("../img/IMG_6930.JPG");
+  background-position: center;
+background-size: cover;
+  border-radius: 50%;
+}
+.infoAboutMe{
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#titleWhoAmI{
+  color: #f9faf8;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+#subTitleWhoAmI{
+  color: #e5e7eb;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+@media (min-width:500px) {
+  #titleWhoAmI{
+    font-size: 2rem;
+  }
+  #subTitleWhoAmI{
+    font-size: 1.2rem;
+  }
+}
+@media (min-width:767px) {
+  .mainWhoAmI{
+    background-color: #1f2937;
+    padding: 220px 5%;
+}
+.whoAmI{
+  display: flex;
+  flex-direction: row;
 align-items: center;
 padding: 20px ;
 justify-content: space-around;
@@ -280,7 +342,8 @@ background-size: cover;
   border-radius: 50%;
 }
 .infoAboutMe{
-  width: 50%;
+  width: 56%;
+  margin-left: 4%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -295,6 +358,7 @@ background-size: cover;
   font-size: 1.2rem;
 
   font-weight: 500;
+}
 }
 .logo {
   color: rgb(161, 60, 255);
