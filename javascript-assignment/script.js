@@ -84,16 +84,16 @@ function game() {
     } else if ((computerCounter == 3) & (round <= 4)) {
       console.log(
         "%cComputer wins! If you want you can continue playing until round 5",
-        "color:black; background:#FF0000; font-size: 12px;font-weight:bold; padding: 2px 3px"
+        "color:white; background:#FF0000; font-size: 12px;font-weight:bold; padding: 2px 3px"
       );
     } else if (playerCounter == 3 && round == 5) {
       console.log(
-        "%cYou won this game! Do you want to play again?",
+        "%cYou won this game! Refresh the page to play again",
         "color:black; background:#00AB66; font-size: 12px; font-weight:bold; padding: 2px 3px"
       );
     } else if (computerCounter == 3 && round == 5) {
       console.log(
-        "%cThe computer won this game! Do you want to play again?",
+        "%cThe computer won this game! Refresh the page to play again",
         "color:black; background:#FF0000; font-size: 12px;font-weight:bold; padding: 2px 3px"
       );
     } else if (round == 5) {
