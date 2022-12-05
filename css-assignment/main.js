@@ -1,5 +1,6 @@
 window.addEventListener("load", () => {
   let bars = document.querySelector(".navBars");
+  let body = document.querySelector("body");
   let cross = document.querySelector(".navCross");
   let navBarButton = document.querySelector(".navBarMobile");
   let sideNav = document.querySelector(".navLinksFlexMobile");

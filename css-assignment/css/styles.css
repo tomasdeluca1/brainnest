@@ -361,7 +361,7 @@ background-image: url("../img/Banner-01.png");
 
 .callToActionSection{
     width: 80%;
-margin: 50px 10%;
+margin: 50px 10% 100px 10%;
 padding: 20px 5%;
 background-color: #3882f6;
 border-radius: 0.5rem;
@@ -393,7 +393,7 @@ margin-bottom: 20px;
 @media (min-width: 1024px) {
     .callToActionSection{
         width: 70%;
-        margin: 70px 15%;
+        margin: 70px 15% 120px 15%;
         padding: 40px 5%;
         background-color: #3882f6;
         border-radius: 0.5rem;
@@ -429,6 +429,11 @@ footer{
     padding: 20px;
     text-align: center;
     color: #e5e7eb;
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    box-shadow: -2px 18px 20px 8px rgb(249 250 248 / 50%);
+    z-index: 1;
 }
 
 

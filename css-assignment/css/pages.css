@@ -16,7 +16,7 @@ display: flex;
 flex-wrap: wrap;
 align-items: center;
 justify-content: space-around;
-padding: 10px 15% 40px 15%;
+padding: 10px 15% 150px 15%;
 }
 .projectBox{
     display: flex;
@@ -276,6 +276,8 @@ border-top-right-radius: 1rem;
 /***************************************************************************/
 /************************************************************** Who am I */
 /***************************************************************************/
+@media (max-width: 767px) {
+  
 
 .mainWhoAmI{
     background-color: #1f2937;
@@ -313,6 +315,7 @@ background-size: cover;
   font-size: 0.9rem;
   font-weight: 500;
 }
+}
 @media (min-width:500px) {
   #titleWhoAmI{
     font-size: 2rem;
@@ -324,17 +327,19 @@ background-size: cover;
 @media (min-width:767px) {
   .mainWhoAmI{
     background-color: #1f2937;
-    padding: 220px 5%;
+    height: 100vh;
 }
 .whoAmI{
   display: flex;
   flex-direction: row;
 align-items: center;
-padding: 20px ;
-justify-content: space-around;
+padding: 10vh  15%;
+width: 100%;
+justify-content: space-evenly;
+align-items: center;
 }
 .pictureOfMe{
-  width: 40%;
+  width: 20%;
   padding: 20%;
   background-image: url("../img/IMG_6930.JPG");
   background-position: center;
@@ -342,8 +347,7 @@ background-size: cover;
   border-radius: 50%;
 }
 .infoAboutMe{
-  width: 56%;
-  margin-left: 4%;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
