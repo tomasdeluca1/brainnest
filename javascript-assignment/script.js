@@ -25,14 +25,9 @@ function game() {
   while (i < 5) {
     let computerSelection = computerPlay();
     let playerSelection = playerLowerCase();
+
     console.log(`%cRound ${i + 1}`, "background: blue; padding: 2px 3px");
-    if (playerSelection === 3) {
-      console.log("You won");
-    } else if (computerSelection === 3) {
-      console.log("Computer won");
-    } else {
-      playRound(playerSelection, computerSelection);
-    }
+
     function playRound(playerSelection, computerSelection) {
       console.log(
         `You played` + `%c ${playerSelection.toUpperCase()}`,
@@ -83,6 +78,13 @@ function game() {
         console.log("%cIt's a deuce", "color: yellow");
         console.log(`Player ${playerCounter} - Computer ${computerCounter}`);
       }
+    }
+    if (playerCounter == 3) {
+      console.log("You won!");
+    } else if (computerCounter == 3) {
+      console.log("Computer won!");
+    } else {
+      playRound(playerSelection, computerSelection);
     }
   }
 }
