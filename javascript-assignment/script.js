@@ -11,9 +11,16 @@ function game() {
     let chooseYourFighter = prompt(
       "Choose your fighter: Rock, Paper or Scissors?"
     ).toLowerCase();
+    while (
+      chooseYourFighter !== "rock" &&
+      chooseYourFighter !== "paper" &&
+      chooseYourFighter !== "scissors"
+    ) {
+      chooseYourFighter = prompt("Incorrect option. Try again").toLowerCase();
+    }
     return chooseYourFighter;
   }
-  // for (let i = 0; i < 5; i++) {
+
   let i = 0;
   while (i < 5) {
     let computerSelection = computerPlay();
