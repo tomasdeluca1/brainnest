@@ -34,16 +34,22 @@ function game() {
       playRound(playerSelection, computerSelection);
     }
     function playRound(playerSelection, computerSelection) {
-      console.log(`You played ${playerSelection}`);
-      console.log(`The computer played ${computerSelection}`);
+      console.log(
+        `You played` + `%c ${playerSelection.toUpperCase()}`,
+        "font-weight:bold;"
+      );
+      console.log(
+        `The computer played` + `%c ${computerSelection.toUpperCase()}`,
+        "font-weight:bold;"
+      );
 
       if (playerSelection == "rock" && computerSelection == "scissors") {
-        console.log("%cYou Win! Rock beats Scissors", "color : green");
+        console.log("%cYou Win! Rock beats Scissors", "color : #00AB66");
         ++playerCounter;
         i++;
         console.log(`Player ${playerCounter} - Computer ${computerCounter}`);
       } else if (playerSelection == "paper" && computerSelection == "rock") {
-        console.log("%cYou Win! Paper beats Rock", "color : green");
+        console.log("%cYou Win! Paper beats Rock", "color : #00AB66");
         ++playerCounter;
         i++;
         console.log(`Player ${playerCounter} - Computer ${computerCounter}`);
@@ -51,17 +57,17 @@ function game() {
         playerSelection == "scissors" &&
         computerSelection == "paper"
       ) {
-        console.log("%cYou Win! Scissors beats Paper", "color : green");
+        console.log("%cYou Win! Scissors beats Paper", "color : #00AB66");
         ++playerCounter;
         i++;
         console.log(`Player ${playerCounter} - Computer ${computerCounter}`);
       } else if (computerSelection == "rock" && playerSelection == "scissors") {
-        console.log("%cYou lose! Rock beats Scissors", "color : red");
+        console.log("%cYou lose! Rock beats Scissors", "color : #FF0000");
         ++computerCounter;
         i++;
         console.log(`Player ${playerCounter} - Computer ${computerCounter}`);
       } else if (computerSelection == "paper" && playerSelection == "rock") {
-        console.log("%cYou lose! Paper beats Rock", "color : red");
+        console.log("%cYou lose! Paper beats Rock", "color : #FF0000");
         ++computerCounter;
         i++;
         console.log(`Player ${playerCounter} - Computer ${computerCounter}`);
@@ -69,15 +75,12 @@ function game() {
         computerSelection == "scissors" &&
         playerSelection == "paper"
       ) {
-        console.log("%cYou lose! Scissors beats Paper", "color : red");
+        console.log("%cYou lose! Scissors beats Paper", "color : #FF0000");
         ++computerCounter;
         i++;
         console.log(`Player ${playerCounter} - Computer ${computerCounter}`);
       } else if (computerSelection === playerSelection) {
         console.log("%cIt's a deuce", "color: yellow");
-        console.log(`Player ${playerCounter} - Computer ${computerCounter}`);
-      } else if (playerSelection != "rock" || "paper" || "scissors") {
-        console.warn("The value entered is incorrect, try again.");
         console.log(`Player ${playerCounter} - Computer ${computerCounter}`);
       }
     }
