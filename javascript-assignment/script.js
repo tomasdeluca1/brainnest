@@ -76,12 +76,12 @@ function game() {
     let playerSelection = playerLowerCase();
 
     playRound(playerSelection, computerSelection, round);
-    if (playerCounter == 3) {
+    if ((playerCounter == 3) & (round <= 4)) {
       console.log(
         "%cYou won! If you want you can continue playing until round 5",
         "color:black; background:#00AB66; font-size: 12px; font-weight:bold; padding: 2px 3px"
       );
-    } else if (computerCounter == 3) {
+    } else if ((computerCounter == 3) & (round <= 4)) {
       console.log(
         "%cComputer wins! If you want you can continue playing until round 5",
         "color:black; background:#FF0000; font-size: 12px;font-weight:bold; padding: 2px 3px"
