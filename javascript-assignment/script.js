@@ -79,12 +79,11 @@ function game() {
         console.log(`Player ${playerCounter} - Computer ${computerCounter}`);
       }
     }
+    playRound(playerSelection, computerSelection);
     if (playerCounter == 3) {
-      console.log("You won!");
+      alert("You won! if you want keep playing till round 5");
     } else if (computerCounter == 3) {
-      console.log("Computer won!");
-    } else {
-      playRound(playerSelection, computerSelection);
+      alert("Computer wins! if you want keep playing till round 5");
     }
   }
 }
