@@ -1,0 +1,137 @@
+body{
+    background-color: #3b3b3b;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameNumbers{
+    display: flex;
+    flex-direction: column;
+    color: #ececec;
+    background-color: #272727;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 5px 20px; 
+}
+.gameStats{
+    display: flex;
+    font-size: 18px;
+}
+.gameStats div{
+    margin: 25px ;
+    display: flex;
+}
+#results{
+text-align: center;
+margin: 50px 0 20px 0;
+font-size: 28px;
+font-weight: 600;
+color: #ececec;
+}
+.roundNumber{
+    text-align: center;
+    margin: 20px 0 0px 0;
+    font-size: 20px;
+    color: #ececec;
+}
+#title{
+    text-align: center;
+    margin:40px 0 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ececec;
+}
+.redText{
+color: #ff0000;
+}
+.greenText{
+    color: #00ff00;
+}
+.yellowText{
+    color: #e4f000;
+}
+h4{
+    margin: 0;
+}
+.playersSelections{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ececec;
+    width: 100%;
+    margin: 50px 0 20px 0;
+}
+.playersSelections div{
+display: flex;
+align-items: center;
+margin: 2px;
+}
+.textMarginLeft{
+    margin-left: 5px;
+}
+.textMarginRight{
+    margin-right: 5px;
+}
+.buttonsFlex{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.buttonsFlex button{
+    background-color: #3b3b3b;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 1px #ececec solid;
+    border-radius: 0.5rem;
+    width: 100px;
+    font-weight: 600;
+}
+.buttonsFlex button:hover{
+    color: #3b3b3b;
+    background-color: white;
+    border: 1px #3b3b3b solid;
+    cursor: pointer;
+}
+#rounds{
+    padding: 10px;
+    width: 40%;
+    background-color: #505050;
+    border-radius: 1rem;
+    display: none;
+}
+#rounds h4{
+    text-align: center;
+    color: #ececec;
+}
+#roundsList li{
+    margin: 5px;
+    /* width: 80%; */
+}
+#clearButton{
+    display: none;
+    color: #3b3b3b;
+    background-color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 1px #ececec solid;
+    border-radius: 0.5rem;
+    width: 200px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#clearButton:hover{
+    background-color: #3b3b3b;
+   color: white;
+}

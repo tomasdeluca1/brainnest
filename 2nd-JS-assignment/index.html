@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock, paper or scissors</title>
+</head>
+<body>
+    <div class="container">
+        <div class="gameNumbers">
+            <div class="roundNumber">Round <h4 class="textMarginLeft" id="roundNumber">1</h4></div>
+            <div class="gameStats">
+                <div >
+                    Player <h4 class="greenText textMarginLeft" id="playerCounter">0</h4> 
+                </div>
+                <div >
+                    Draws <h4 class="yellowText textMarginLeft" id="drawCounter">0</h4>
+                </div>
+                <div >
+                    Computer <h4 class="redText textMarginLeft" id="computerCounter">0</h4>
+                </div>
+            </div>
+        </div>
+       <div id="results">Best of 5 rounds wins!</div>
+       <div id="gameButtons">
+           <div id="title">Rock, paper or scissors?</div>
+           <div class="buttonsFlex">
+               <button id="rockButton">Rock</button>
+               <button id="paperButton">Paper</button>
+               <button id="scissorsButton">Scissors</button>
+           </div>
+       </div>
+       <div id="clearButton">Start a new game</div>
+        <div class="playersSelections">
+            <div><h4 class="greenText textMarginRight" id="playerChoice"></h4>vs<h4 class="redText textMarginLeft" id="computerChoice"></h4></div>
+        </div>
+        <div id="rounds">
+            <h4>Rounds results</h4>
+            <ol id="roundsList">
+            </ol>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
