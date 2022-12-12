@@ -19,13 +19,15 @@ const calculate = (a, operator, b) => {
   if (operator === "add") return firstNum + secondNum;
   if (operator === "subtract") return firstNum - secondNum;
   if (operator === "multiply") return firstNum * secondNum;
-  if (operator === "divide") return firstNum / secondNum;
+  if (operator === "divide")
+    return parseFloat((firstNum / secondNum).toFixed(4));
 };
 const operatorKeys = (key) => {
   Array.from(key.parentNode.children).forEach((k) =>
     k.classList.remove("is-depressed")
   );
 };
+
 keys.addEventListener("click", (e) => {
   const key = e.target;
   const action = key.dataset.action;
@@ -79,7 +81,7 @@ const operators = (action, displayedNum, key, previousKeyType) => {
       firstValue &&
       operator &&
       previousKeyType !== "operator" &&
-      previousKeyType !== "calculate"
+      previousKeyType === "calculate"
     ) {
       const calcValue = calculate(firstValue, operator, secondValue);
       display.textContent = calcValue;
