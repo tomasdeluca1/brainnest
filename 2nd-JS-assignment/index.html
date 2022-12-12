@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Rock, paper or scissors</title>
+    <link rel="stylesheet" href="./rockPaperScissors/style.css">
+    <link rel="stylesheet" href="./calculator/style.css">
+    <title>Js assignment</title>
 </head>
 <body>
     <div class="rockPaperScissors">
         <div class="gameNumbers">
-            <div class="roundNumber">Round <h4 class="textMarginLeft" id="roundNumber">1</h4></div>
             <div class="gameStats">
-                <div >
-                    Player <h4 class="greenText textMarginLeft" id="playerCounter">0</h4> 
+            <div class="roundNumber">Round <h4 class="textMarginLeft" id="roundNumber">1</h4></div>
+                <div id="winsN">
+                    Player <h4 class=" textMarginLeft" id="playerCounter">0</h4> 
                 </div>
-                <div >
-                    Draws <h4 class="yellowText textMarginLeft" id="drawCounter">0</h4>
+                <div id="drawsN">
+                    Draws <h4 class=" textMarginLeft" id="drawCounter">0</h4>
                 </div>
-                <div >
-                    Computer <h4 class="redText textMarginLeft" id="computerCounter">0</h4>
+                <div id="losesN">
+                    Computer <h4 class=" textMarginLeft" id="computerCounter">0</h4>
                 </div>
             </div>
         </div>
@@ -43,7 +44,7 @@
         </div>
     </div>
     <div class="toggleButtonContainer">
-        <h4>Change</h4>
+        <h4>Toggle button</h4>
         <div class="toggleButtonBox">
             <button class="toggleButton"></button>
         </div>
