@@ -7,7 +7,7 @@ toggleButtonBox.addEventListener("click", () => {
   JScalculator.classList.toggle("displayNone");
 });
 
-const JScalculator = document.querySelector(".JScalculator");
+const jsCalculator = document.querySelector(".jsCalculator");
 
 const keys = document.querySelector(".calculator-keys");
 const display = document.querySelector(".calculator-display");
