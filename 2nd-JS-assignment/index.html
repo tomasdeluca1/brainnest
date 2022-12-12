@@ -8,7 +8,7 @@
     <title>Rock, paper or scissors</title>
 </head>
 <body>
-    <div class="container">
+    <div class="rockPaperScissors">
         <div class="gameNumbers">
             <div class="roundNumber">Round <h4 class="textMarginLeft" id="roundNumber">1</h4></div>
             <div class="gameStats">
@@ -42,6 +42,51 @@
             </ol>
         </div>
     </div>
-    <script src="./script.js"></script>
+    <div class="toggleButtonContainer">
+        <h4>Change</h4>
+        <div class="toggleButtonBox">
+            <button class="toggleButton"></button>
+        </div>
+    </div>
+    <div class="JScalculator displayNone">
+        <div class="calculator">
+            
+            
+            <div class="calculator-display">0</div>
+          
+            <div class="calculator-keys">
+          
+              <button type="button" class="operator" data-action="add">+</button>
+              <button type="button" class="operator" data-action="subtract">-</button>
+              <button type="button" class="operator" data-action="multiply">&times;</button>
+              <button type="button" class="operator" data-action="divide">&divide;</button>
+          
+              <button type="button" class="button number" id="seven" value="7">7</button>
+              <button type="button" class="button number" id="eight" value="8">8</button>
+              <button type="button" class="button number" id="nine" value="9">9</button>
+          
+          
+              <button type="button" class="button number" id="four" value="4">4</button>
+              <button type="button" class="button number" id="five" value="5">5</button>
+              <button type="button" class="button number" id="six" value="6">6</button>
+          
+          
+              <button type="button" class="button number" id="one" value="1">1</button>
+              <button type="button" class="button number" id="two" value="2">2</button>
+              <button type="button" class="button number" id="three" value="3">3</button>
+          
+          
+              <button type="button" class="button number" id="cero" value="0">0</button>
+              <button type="button" class="decimal" data-action="decimal">.</button>
+              <button type="button" class="all-clear" data-action="clear">AC</button>
+          
+              <button type="button" class="equal-sign" data-action="calculate">=</button>
+          
+            </button>
+          </div>
+    </div>
+    </div>
+    <script src="./calculator/script.js"></script>
+    <script src="./rockPaperScissors/script.js"></script>
 </body>
 </html>
