@@ -4,10 +4,10 @@ const toggleButtonBox = document.querySelector(".toggleButtonBox");
 toggleButtonBox.addEventListener("click", () => {
   toggleButton.classList.toggle("toggleOption");
   rockPaperScissors.classList.toggle("displayNone");
-  jsCalculator.classList.toggle("displayNone");
+  javascriptCalculator.classList.toggle("displayNone");
 });
 
-const jsCalculator = document.querySelector(".jsCalculator");
+const javascriptCalculator = document.querySelector(".javascriptCalculator");
 
 const keys = document.querySelector(".calculator-keys");
 const display = document.querySelector(".calculator-display");
