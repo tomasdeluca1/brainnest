@@ -1,31 +1,44 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 @media (min-width: 0) {
     p{
      margin-bottom: 0;
    }
-    img{
-      width: 100%;
-      border-top-left-radius: 1rem;
-      border-top-right-radius: 1rem;
-    }
+body{
+  min-height: 80vh;
+}
  .projectsFlexBox{
  display: flex;
  flex-wrap: wrap;
  align-items: center;
  justify-content: space-evenly;
- padding: 10px 12.5% 150px 12.5%;
+ padding: 50px 12.5% 150px 12.5%;
  background-color: #1f2937;
+ min-height: 80vh;
+ }
+ #htmlAssignment{
+  background-image: url("./img/html.png");
+ }
+ #cssAssignment{
+  background-image: url("./img/css.png");
+ }
+ #jsOnConsoleAssignment{
+  background-image: url("./img/console.png");
+ }
+ #jsVitrualDomAssignment{
+  background-image: url("./img/javascript.png");
+  
  }
  .projectBox{
      display: flex;
      flex-direction: column;
      margin: 20px 10px;
-     width: 300px;
+     width: 400px;
      border-radius: 1rem;
-     box-shadow: 0px 0px 20px 5px rgba(225, 225, 225, 0.2);
+     box-shadow: 0px 0px 10px 5px rgba(225, 225, 225, 0.1);
      background-color: #1f2937;
  }
  .projectBox a{
@@ -36,12 +49,15 @@
  width: 100%;
  border-top-left-radius: 1rem;
  border-top-right-radius: 1rem;
+ background-position: top;
+ background-size: cover;
+ height: 250px;
  }
  .projectBox a p{
      color: #f9faf8;
      background-color: #1f2937;
      font-weight: 500;
-     font-size: 1rem;
+     font-size: 0.9rem;
      padding: 10px 30px 10px 30px;
      border-bottom-left-radius: 1rem;
      border-bottom-right-radius: 1rem;
@@ -63,6 +79,6 @@
          flex-wrap: wrap;
          align-items: center;
          justify-content: space-evenly;
-         padding: 10px 20% 150px 20%;
+         padding: 80px 20% 150px 20%;
          }
  }
