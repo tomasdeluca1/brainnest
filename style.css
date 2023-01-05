@@ -1,60 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 @media (min-width: 0) {
     p{
      margin-bottom: 0;
    }
-     .technologiesUsed{
-         font-size: 1.5rem;
-         padding: 10px 0;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-       }
-       .technologiesUsed svg{
-         padding: 0 2px;
-       }
-       #javascriptIcon{
-         color: #f0db4f;
-       }
-       #reactIcon{
-     color: #61DBFB;
-       }
-       #htmlIcon{
-     color: #e34c26;
-       }
-       #cssIcon{
-     color: #264de4;
-       }
-       #nodeIcon {
-         color:#3c873a
-       }
-       #vueIcon {
-         color:#42b883
-       }
-       hr{
-         margin: 0;
-         border:dotted 1px rgb(229, 231, 235,0.7);
-       }
- .pagesTitle{
-     padding-top: 50px;
-     margin-bottom: 30px;
-     font-size: 1.8rem;
-     color: #1f2937;
-     text-align: center;
- }
+    img{
+      width: 100%;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+    }
  .projectsFlexBox{
  display: flex;
  flex-wrap: wrap;
  align-items: center;
  justify-content: space-evenly;
  padding: 10px 12.5% 150px 12.5%;
+ background-color: #1f2937;
  }
  .projectBox{
      display: flex;
      flex-direction: column;
      margin: 20px 10px;
-     width: 400px;
+     width: 300px;
      border-radius: 1rem;
-     box-shadow: 0px 0px 10px 5px rgb(31, 41, 55, 0.2);
+     box-shadow: 0px 0px 20px 5px rgba(225, 225, 225, 0.2);
      background-color: #1f2937;
  }
  .projectBox a{
