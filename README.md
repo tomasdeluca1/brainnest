@@ -4,6 +4,7 @@ Website with assignments deployed on: [tomasdeluca1.github.io/brainnest/](https:
 
 ## On the main page you would find 4 cards:
 
-|Assignment|Name|Description|Technologies|     
+|Assignment|Name|Description|Technologies|
+|----------|----|-----------|------------|  
 |First|HTML assignment|Create a simple HTML website (without using CSS or JS) with 4 links that redirect to 4 different combinations of html lists tags|HTML|  
 |John|john@example.com|Address1|
