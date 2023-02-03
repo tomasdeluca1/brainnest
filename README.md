@@ -11,4 +11,6 @@ Website with assignments deployed on: [tomasdeluca1.github.io/brainnest/](https:
 |Third|Rock, paper or scissors (on console)|Create a script of the game: "rock, paper or scissors" that could be played on the console of a browser, with the answers from useers on different prompts|JavaScript|
 |Fourth|Calculator and "Rock paper or scissors"|Create the logic of a simple calculator that could be able to add, subtract, multiply and divide, and all the functions that a simple calculator could do, and an additional assignment was to pass the 3rd assignment onto a visual design on the virtualDOM|JavaScript, virtualDOM, CSS and HTML|
 
+### Curious fact
 
+The actual home page of my professional portfolio ["Huevsite"](https://huevsite.com.ar/home) was inspired on the second assignment of this internship ;)
